@@ -87,7 +87,7 @@
         },
 
         getWorkerResult: function(e) {
-            $('.minimap .code').html(e.data.code);
+            $('.minimap .code').text(e.data.code);
             this.colorLines();
         },
 

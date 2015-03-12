@@ -3,7 +3,7 @@
 Adds a minimap to get an overview
 
 #Channellog
--Rewritten, changed logic
+- Rewritten, changed logic
 
 #Read First
 Not perfect. If you test it, please write me your experience.
