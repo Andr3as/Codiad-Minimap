@@ -83,11 +83,12 @@
         updateMap: function() {
             var mode    = $('#current-mode').text();
             var code    = codiad.editor.getContent();
+            $('.minimap .code').removeClass().addClass('code language-' + mode);
             this.worker.postMessage({code: code, mode: mode});
         },
 
         getWorkerResult: function(e) {
-            $('.minimap .code').text(e.data.code);
+            $('.minimap .code').html(e.data.code);
             this.colorLines();
         },
 
